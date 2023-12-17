@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">PAULINE.</h1>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </nav>
+    <nav>
+      <liv><a class="cta" href="contacts.html"><button>Contact</button></a></liv>
+    </nav>
+  </header>
+
+  <body>
+    <div class="container">
+      <figure class="big-circle"></figure>
+      <img src="img/shape.png" class="square" alt="" />
+
+      <section class="form">
+        <article class="contact-info">
+          <h2 class="title">Let's Get In Touch</h2>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            dolorum adipisci recusandae praesentium dicta!
+          </p>
+
+          <address class="info">
+            <div class="information">
+              <ion-icon name="location-outline"></ion-icon>
+              <p>444 Grape Vine City, CA 12345</p>
+            </div>
+            <div class="information">
+              <ion-icon name="mail-outline"></ion-icon>
+              <p>lorem@ipsum.com</p>
+            </div>
+            <div class="information">
+              <ion-icon name="call-outline"></ion-icon>
+              <p>123-456-789</p>
+            </div>
+          </address>
+
+          <div class="social-media">
+            <p>Connect With Me:</p>
+            <div class="social-icons">
+              <a href="#">
+                <ion-icon name="logo-figma"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-google"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="contact-form">
+          <figure class="circle one"></figure>
+          <figure class="circle two"></figure>
+
+          <form action="#" onsubmit="return validateForm()" method="post">
+            <h2 class="title">Contact Me</h2>
+            <div class="input-container">
+              <input type="text" id="name" name="name" class="input" placeholder="Enter Full Name" required/>
+              <span id="nameError" class="error"></span>
+            </div>
+            <div class="input-container">
+              <input type="email" id="email" name="email" class="input" placeholder="Enter Email Address " required/>
+              <span id="emailError" class="error"></span>
+            </div>
+            <div class="input-container">
+              <input type="tel" id="phone" name="phone" class="input" placeholder="Enter Phone Number" required/>
+              <span id="phoneError" class="error"></span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" id="message" class="input" placeholder="Enter Message..." required></textarea>
+              <span id="messageError" class="error"></span>
+            </div>
+            <input type="submit" value="Send" class="btn"/>
+          </form>
+        </article>
+      </section>
+    </div>
+  </body>
+
+
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ui class="socialIcon">
+      <li><a href="#">
+          <ion-icon name="logo-figma"></ion-icon>
+        </a></li>
+      <li><a href="#">
+          <ion-icon name="logo-github"></ion-icon>
+        </a></li>
+      <li><a href="#">
+          <ion-icon name="logo-google"></ion-icon>
+        </a></li>
+      <li><a href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+    </ui>
+    <ui class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ui>
+    <p>&copy; 2023 PAULINE. All Rights Reserved.</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="web.js"></script>
+
+</body>
+
+</html>
