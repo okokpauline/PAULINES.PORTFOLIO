@@ -17,6 +17,71 @@ li, a, button {
   color: #131212;
 }
 
+h1 {
+  color: #131212;
+  margin: 20px 0px 20px;
+  font-size: 50px;
+}
+
+h3 {
+  color: #f441a5;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+h4 {
+  color: #131212;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+/* Header CSS */
+#desktopHeader {
+  display: flex;
+}
+
+#mobileHeader {
+  display: none;
+}
+
+#hamburger:hover {
+  cursor: pointer;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #e7e7e7;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f441a5;
+}
+
+.sidenav #closeButton {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
 nav {
   z-index: 1;
 }
@@ -25,7 +90,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  padding: 3px 10%;
 }
 
 .logo {
@@ -39,7 +104,7 @@ h1.logo::before {
   position: absolute;
   top: 0;
   right: 0;
-  height: 90px;
+  height: 70px;
   background: white;
   animation: showLeft 2s ease forwards reverse;
   animation-delay: .4s;
@@ -64,11 +129,6 @@ h1.logo::before {
   font-weight: bold;
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-}
-
-/* custom button css */
 button {
   text-decoration: none;
   position: relative;
@@ -88,27 +148,6 @@ button:hover {
   animation: ani 8s linear infinite;
   border: none;
   cursor: pointer;
-}
-
-/* KEYFRAMES ANIMATIONS */
-@keyframes ani {
-  0% {
-    background-position: 0%;
-  }
-
-  100% {
-    background-position: 400%;
-  }
-}
-
-@keyframes showLeft {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
-  }
 }
 
 button:before {
@@ -133,9 +172,32 @@ button:active {
   background: linear-gradient(32deg,#9b9dd0,#f441a5,#b383c9,#03a9f4);
 }
 
-/* About css */
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
 
-about {
+  100% {
+    background-position: 400%;
+  }
+}
+
+@keyframes showLeft {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/* About css */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.about {
   width: 100%;
   padding: 100px 0px;
   background-color: #e7e7e7;
@@ -193,7 +255,6 @@ about {
 }
 
 /* Footer css */
-
 footer {
   display: flex;
   justify-content: center;
@@ -317,5 +378,22 @@ footer .wave#wave4 {
   }
 }
 
-@media (max-width: 959px) {
+@media screen and (max-width: 959px) {
+  #desktopHeader {
+    display: none;
+  }
+  #mobileHeader {
+    display: flex;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+  }
+  .about-text {
+    width: 100%;
+  }
+  .about-text p {
+    margin-bottom: 100px;
+  }
 }

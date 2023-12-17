@@ -15,10 +15,69 @@ li, a, button {
   color: #131212;
 }
 
-.hero {
-  height: 90vh;
-  width: 100%;
-  background-color:azure;
+h1 {
+  color: #131212;
+  margin: 20px 0px 20px;
+  font-size: 50px;
+}
+
+h3 {
+  color: #f441a5;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+h4 {
+  color: #131212;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+/* Header CSS */
+#desktopHeader {
+  display: flex;
+}
+
+#mobileHeader {
+  display: none;
+}
+
+#hamburger:hover {
+  cursor: pointer;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #e7e7e7;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f441a5;
+}
+
+.sidenav #closeButton {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 nav {
@@ -68,11 +127,6 @@ h1.logo::before {
   font-weight: bold;
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-}
-
-/* custom button css */
 button {
   text-decoration: none;
   position: relative;
@@ -92,27 +146,6 @@ button:hover {
   animation: ani 8s linear infinite;
   border: none;
   cursor: pointer;
-}
-
-/* KEYFRAMES ANIMATIONS */
-@keyframes ani {
-  0% {
-    background-position: 0%;
-  }
-
-  100% {
-    background-position: 400%;
-  }
-}
-
-@keyframes showLeft {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
-  }
 }
 
 button:before {
@@ -137,31 +170,42 @@ button:active {
   background: linear-gradient(32deg,#9b9dd0,#f441a5,#b383c9,#03a9f4);
 }
 
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+@keyframes showLeft {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
 /* Home css */
+.hero {
+  height: 90vh;
+  width: 100%;
+  background-color:azure;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
 
 .content {
   position: absolute;
   top: 50%;
-  left: 8%;
+  padding-left: 5%;
   transform: translateY(-50%);
-}
-
-h1 {
-  color: #131212;
-  margin: 20px 0px 20px;
-  font-size: 50px;
-}
-
-h3 {
-  color: #f441a5;
-  font-size: 25px;
-  margin-bottom: 25px;
-}
-
-h4 {
-  color: #131212;
-  letter-spacing: 2px;
-  font-size: 20px;
 }
 
 .newsletter form {
@@ -258,7 +302,6 @@ h4 {
 }
 
 /* Footer css */
-
 footer {
   display: flex;
   justify-content: center;
@@ -382,13 +425,36 @@ footer .wave#wave4 {
   }
 }
 
-@media screen and (max-width: 500px) {
-  img {
-    position: absolute;
-    right: 0;
-    top: 0;
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 959px) {
+  #desktopHeader {
+    display: none;
   }
-  
+  #mobileHeader {
+    display: flex;
+  }
+  .hero {
+    height: 100vh;
+  }
+  .main {
+    flex-direction: column;
+    width: 100%;
+    max-width: inherit;
+  }
+  .content {
+    padding: 1%;
+  }
+  .about img {
+    width: 100%;
+  }
+  .about-text {
+    width: 100%;
+    padding: 25px;
+  }
   .imgContainer {
     position: relative;
   }

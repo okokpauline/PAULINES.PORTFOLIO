@@ -75,23 +75,22 @@
           <figure class="circle one"></figure>
           <figure class="circle two"></figure>
 
-          <form action="#" onsubmit="return validateForm()" method="post">
+          <form id="form">
             <h2 class="title">Contact Me</h2>
             <div class="input-container">
-              <input type="text" id="name" name="name" class="input" placeholder="Enter Full Name" required/>
-              <span id="nameError" class="error"></span>
+              <input type="text" id="name" name="name" class="input" placeholder="Full Name" />
+              <p id="nameError" class="error"></p>
             </div>
             <div class="input-container">
-              <input type="email" id="email" name="email" class="input" placeholder="Enter Email Address " required/>
-              <span id="emailError" class="error"></span>
+              <input type="email" id="email" name="email" class="input" placeholder="Email Address" />
+              <p id="emailError" class="error"></p>
             </div>
             <div class="input-container">
-              <input type="tel" id="phone" name="phone" class="input" placeholder="Enter Phone Number" required/>
-              <span id="phoneError" class="error"></span>
+              <input type="tel" id="phone" name="phone" class="input" placeholder="Phone Number" />
+              <p id="phoneError" class="error"></p>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" id="message" class="input" placeholder="Enter Message..." required></textarea>
-              <span id="messageError" class="error"></span>
+              <textarea name="message" id="message" class="input" placeholder="Message..."></textarea>
             </div>
             <input type="submit" value="Send" class="btn"/>
           </form>
@@ -99,7 +98,6 @@
       </section>
     </div>
   </body>
-
 
   <footer>
     <div class="waves">
@@ -131,10 +129,11 @@
     </ui>
     <p>&copy; 2023 PAULINE. All Rights Reserved.</p>
   </footer>
+
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="query.js"></script>
   <script src="web.js"></script>
-
 </body>
 
 </html>
