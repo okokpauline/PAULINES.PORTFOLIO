@@ -599,7 +599,7 @@ footer .wave#wave4 {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 959px) {
   .container {
     padding: 1.5rem;
   }
@@ -644,5 +644,9 @@ footer .wave#wave4 {
 
   .btn {
     padding: 0.45rem 1.2rem;
+  }
+
+  footer {
+    margin-top: 200px;
   }
 }

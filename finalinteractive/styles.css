@@ -485,9 +485,12 @@ footer .wave#wave4 {
   }
   .about-text {
     width: 100%;
-    padding: 25px;
+    padding: 35px;
   }
   .imgContainer {
     position: relative;
+  }
+  footer {
+    margin-top: 200px;
   }
 }

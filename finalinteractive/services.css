@@ -19,7 +19,7 @@ button {
 
 .hero {
   width: 100%;
-  background-color:#e7e7e716;
+  background-color: #e7e7e716;
 }
 
 h1 {
@@ -143,7 +143,7 @@ button {
   width: 8em;
   height: 30px;
   text-align: center;
-  background: linear-gradient(90deg,#9b9dd0,#f441a5,#b383c9,#03a9f4);
+  background: linear-gradient(90deg, #9b9dd0, #f441a5, #b383c9, #03a9f4);
   background-size: 300%;
   border-radius: 20px;
   z-index: 1;
@@ -163,7 +163,7 @@ button:before {
   right: -5px;
   bottom: -5px;
   z-index: -1;
-  background: linear-gradient(90deg,#9b9dd0,#f441a5,#b383c9,#03a9f4);
+  background: linear-gradient(90deg, #9b9dd0, #f441a5, #b383c9, #03a9f4);
   background-size: 400%;
   border-radius: 20px;
   transition: 1s;
@@ -174,7 +174,7 @@ button:hover::before {
 }
 
 button:active {
-  background: linear-gradient(32deg,#9b9dd0,#f441a5,#b383c9,#03a9f4);
+  background: linear-gradient(32deg, #9b9dd0, #f441a5, #b383c9, #03a9f4);
 }
 
 @keyframes ani {
@@ -272,7 +272,7 @@ body {
   transform: scale(1.1, 1.1);
 }
 
-.card:hover > .card:not(:hover) {
+.card:hover >.card:not(:hover) {
   filter: blur(10px);
   transform: scale(0.9, 0.9);
 }
@@ -288,7 +288,7 @@ body {
 }
 
 .button:hover {
-  background: linear-gradient(90deg,#9b9dd0,#f441a5,#b383c9);
+  background: linear-gradient(90deg, #9b9dd0, #f441a5, #b383c9);
 }
 
 /* Footer css */
@@ -329,7 +329,7 @@ footer .menu li a {
   font-size: 1.2em;
   color: #232946;
   margin: 0 10px;
-  display:inline-block;
+  display: inline-block;
   text-decoration: none;
   opacity: 0.75;
 }
@@ -339,7 +339,7 @@ footer .menu li a:hover {
 }
 
 footer p {
-  color:#232946;
+  color: #232946;
   text-align: center;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -356,7 +356,7 @@ footer .menu {
 }
 
 footer .wave {
-  position:absolute;
+  position: absolute;
   top: -100px;
   left: 0;
   width: 100%;
@@ -394,23 +394,21 @@ footer .wave#wave4 {
 }
 
 @keyframes animateWave {
-  0%
-  {
-    background-position-x: 1000px ;
+  0% {
+    background-position-x: 1000px;
   }
-  100%
-  {
+
+  100% {
     background-position-x: 0px;
   }
 }
 
 @keyframes animateWave_02 {
-  0%
-  {
-    background-position-x: 0px ;
+  0% {
+    background-position-x: 0px;
   }
-  100%
-  {
+
+  100% {
     background-position-x: 0px;
   }
 }
@@ -419,6 +417,7 @@ footer .wave#wave4 {
   #desktopHeader {
     display: none;
   }
+
   #mobileHeader {
     display: flex;
   }
@@ -427,9 +426,11 @@ footer .wave#wave4 {
     flex-direction: column;
     margin: 10px;
   }
+
   .card {
     margin: 0px 0px 30px 0px;
   }
+
   footer {
     margin-top: 500px;
   }

@@ -413,4 +413,7 @@ footer .wave#wave4 {
   .about-text p {
     margin-bottom: 100px;
   }
+  footer {
+    margin-top: 200px;
+  }
 }
