@@ -17,6 +17,12 @@ button {
   color: #131212;
 }
 
+.hero {
+  height: 90vh;
+  width: 100%;
+  background-color:#e7e7e716;
+}
+
 h1 {
   color: #232946;
   margin: 20px 0px 20px;
