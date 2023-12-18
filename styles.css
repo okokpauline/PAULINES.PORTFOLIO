@@ -123,12 +123,15 @@ h1.logo::before {
   padding: 0px 50px;
 }
 
-.navbar li a {
+.navbar li a,
+.mobileNavbar li a {
   transition: all 0.3s ease 0s;
 }
 
 .navbar li a:hover,
-.navbar li a.active {
+.navbar li a.active,
+.mobileNavbar li a:hover,
+.mobileNavbar li a.active {
   color: #f441a5;
   font-weight: bold;
 }
@@ -490,7 +493,7 @@ footer .wave#wave4 {
     padding: 1%;
   }
   .about img {
-    width: 100%;
+    max-width: 100%;
   }
   .about-text {
     width: 100%;
