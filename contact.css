@@ -301,6 +301,7 @@ textarea.input {
   padding: 0.6rem 1.3rem;
   font-size: 0.95rem;
   color: #232946;
+  background-color: white;
   line-height: 1;
   border-radius: 20px;
   outline: none;
