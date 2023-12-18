@@ -16,7 +16,7 @@ li, a, button {
 }
 
 h1 {
-  color: #131212;
+  color: #232946;
   margin: 20px 0px 20px;
   font-size: 50px;
 }
@@ -28,7 +28,7 @@ h3 {
 }
 
 h4 {
-  color: #131212;
+  color: #232946;
   letter-spacing: 2px;
   font-size: 20px;
 }
@@ -330,14 +330,14 @@ footer .menu li {
 
 footer .socialIcon li a {
   font-size: 2em;
-  color: #131212;
+  color: #232946;
   margin: 0 10px;
   display: inline-block;
 }
 
 footer .menu li a {
   font-size: 1.2em;
-  color: #131212;
+  color: #232946;
   margin: 0 10px;
   display:inline-block;
   text-decoration: none;
@@ -349,7 +349,7 @@ footer .menu li a:hover {
 }
 
 footer p {
-  color:#131212;
+  color:#232946;
   text-align: center;
   margin-top: 15px;
   margin-bottom: 10px;

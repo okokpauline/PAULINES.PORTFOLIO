@@ -18,7 +18,7 @@ button {
 }
 
 h1 {
-  color: #131212;
+  color: #232946;
   margin: 20px 0px 20px;
   font-size: 50px;
 }
@@ -30,7 +30,7 @@ h3 {
 }
 
 h4 {
-  color: #131212;
+  color: #232946;
   letter-spacing: 2px;
   font-size: 20px;
 }
@@ -200,7 +200,7 @@ body {
 .title h1 {
   font-size: 40px;
   text-align: center;
-  color: #131212;
+  color: #232946;
   margin-bottom: 25px;
   position: relative;
 }
@@ -247,7 +247,7 @@ body {
 
 .card h2 {
   font-size: 28px;
-  color: #131212;
+  color: #232946;
   margin-bottom: 20px;
 }
 
@@ -260,13 +260,22 @@ body {
   font-size: 17px;
   margin-bottom: 30px;
   line-height: 1.5;
-  color: #131212;
+  color: #232946;
+}
+
+.services .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.card:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
 }
 
 .button {
   font-size: 15px;
   text-decoration: none;
-  color: #131212;
+  color: #232946;
   padding: 8px 12px;
   border-radius: 10px;
   border: 2px solid;
@@ -277,7 +286,7 @@ body {
   background: linear-gradient(90deg,#9b9dd0,#f441a5,#b383c9);
 }
 
-/* footer */
+/* Footer css */
 footer {
   display: flex;
   justify-content: center;
@@ -306,16 +315,16 @@ footer .menu li {
 
 footer .socialIcon li a {
   font-size: 2em;
-  color: #131212;
+  color: #232946;
   margin: 0 10px;
   display: inline-block;
 }
 
 footer .menu li a {
   font-size: 1.2em;
-  color: #131212;
+  color: #232946;
   margin: 0 10px;
-  display: inline-block;
+  display:inline-block;
   text-decoration: none;
   opacity: 0.75;
 }
@@ -325,7 +334,7 @@ footer .menu li a:hover {
 }
 
 footer p {
-  color: #131212;
+  color:#232946;
   text-align: center;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -342,7 +351,7 @@ footer .menu {
 }
 
 footer .wave {
-  position: absolute;
+  position:absolute;
   top: -100px;
   left: 0;
   width: 100%;
@@ -380,21 +389,23 @@ footer .wave#wave4 {
 }
 
 @keyframes animateWave {
-  0% {
-    background-position-x: 1000px;
+  0%
+  {
+    background-position-x: 1000px ;
   }
-
-  100% {
+  100%
+  {
     background-position-x: 0px;
   }
 }
 
 @keyframes animateWave_02 {
-  0% {
-    background-position-x: 0px;
+  0%
+  {
+    background-position-x: 0px ;
   }
-
-  100% {
+  100%
+  {
     background-position-x: 0px;
   }
 }
@@ -408,12 +419,17 @@ footer .wave#wave4 {
   }
   .servicesContainer {
     width: 100%;
+    height: inherit;
     margin: 0;
   }
   .services {
     flex-direction: column;
+    margin: 10px;
   }
   .card {
     margin: 0px 0px 30px 0px;
+  }
+  footer {
+    margin-top: 100px;
   }
 }

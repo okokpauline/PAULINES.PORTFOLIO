@@ -14,7 +14,53 @@
 li, a, button {
   font-weight: 500;
   font-size: 16px;
-  color: #131212;
+  color: #232946;
+}
+
+#desktopHeader {
+  display: flex;
+}
+
+#mobileHeader {
+  display: none;
+}
+
+#hamburger:hover {
+  cursor: pointer;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #e7e7e7;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f441a5;
+}
+
+.sidenav #closeButton {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 nav {
@@ -203,7 +249,7 @@ form {
 }
 
 .title {
-  color: #131212;
+  color: #232946;
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1;
@@ -221,7 +267,7 @@ form {
   width: 100%;
   outline: none;
   border: 2px solid transparent;
-  background: linear-gradient(white, white) padding-box, linear-gradient(90deg,#f441a5,#b383c9,#015f8a) border-box;;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg,#f441a5,#b383c9,#015f8a) border-box;
   padding: 0.6rem 1.2rem;
   color:#333;
   font-weight: 500;
@@ -245,7 +291,7 @@ textarea.input {
   left: 15px;
   transform: translateY(-50%);
   padding: 0 0.4rem;
-  color: #131212;
+  color:#232946;
   font-size: 0.9rem;
   font-weight: 400;
   pointer-events: none;
@@ -260,10 +306,10 @@ textarea.input {
 
 .btn {
   padding: 0.6rem 1.3rem;
-  background-color: #fff;
-  border: 2px solid #fafafa;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg,#f441a5,#b383c9,#015f8a) border-box;
+  border: 2px solid transparent;
   font-size: 0.95rem;
-  color: #131212;
+  color: #232946;
   line-height: 1;
   border-radius: 20px;
   outline: none;
@@ -273,8 +319,8 @@ textarea.input {
 }
 
 .btn:hover {
-  background-color: transparent;
-  color: #fff;
+  background: #f441a5;
+  color: #232946;
 }
 
 .input-container span {
@@ -316,7 +362,7 @@ textarea.input {
 }
 
 .contact-info .title {
-  color: #131212;
+  color: #232946;
 }
 
 .text {
@@ -353,7 +399,7 @@ textarea.input {
   height: 35px;
   border-radius: 10px;
   background: linear-gradient(45deg, #b383c9, #9b9dd0);
-  color: #131212;
+  color: #232946;
   margin-right: 0.5rem;
   transition: 0.3s;
   cursor: pointer;
@@ -397,40 +443,6 @@ textarea.input {
   left: calc(50% - 180px);
 }
 
-/* Custom Popup */
-#customPopupName,
-#customPopupEmail,
-#customPopupPhone {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
-#overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-}
-
-#closeBtn {
-  cursor: pointer;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
-
 @media (max-width: 850px) {
   .form {
     grid-template-columns: 1fr;
@@ -447,11 +459,6 @@ textarea.input {
     top: -13px;
     left: initial;
     right: 70px;
-  }
-
-  .square {
-    transform: translate(140%, 43%);
-    height: 350px;
   }
 
   .big-circle {
@@ -506,14 +513,14 @@ footer .menu li {
 
 footer .socialIcon li a {
   font-size: 2em;
-  color: #131212;
+  color: #232946;
   margin: 0 10px;
   display: inline-block;
 }
 
 footer .menu li a {
   font-size: 1.2em;
-  color: #131212;
+  color: #232946;
   margin: 0 10px;
   display:inline-block;
   text-decoration: none;
@@ -525,7 +532,7 @@ footer .menu li a:hover {
 }
 
 footer p {
-  color:#131212;
+  color:#232946;
   text-align: center;
   margin-top: 15px;
   margin-bottom: 10px;
