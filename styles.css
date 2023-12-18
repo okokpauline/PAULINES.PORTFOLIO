@@ -237,7 +237,7 @@ body {
   border-radius: 20px;
 }
 
-.newsletter form input:first-child {
+#mail {
   display: inline-block;
   width: 100%;
   padding: 14px 130px 14px 15px;
@@ -247,7 +247,7 @@ body {
   
 }
 
-.newsletter form input:last-child {
+#letsStart {
   position: absolute;
   display: inline-block;
   outline: none;
@@ -262,7 +262,7 @@ body {
   cursor: pointer;
 }
 
-.newsletter form input:last-child:hover {
+#letsStart:hover {
   background: linear-gradient(90deg,#9b9dd0,#f441a5,#b383c9) border-box;
 }
 
