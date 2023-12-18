@@ -199,7 +199,7 @@ button:active {
   justify-content: space-between;
   align-items: center;
   padding: 0px 5%;
-  background-image: url('/images//slideshow/image1.jpg');
+  background-image: url('/images//slideshow/image1.svg');
   background-position: center center;
 }
 
@@ -210,9 +210,12 @@ button:active {
 
 .slideshowContainer img {
   width: 100px;
-  height: 100px;
   margin-bottom: 10px;
-  border: 1px solid black;
+  border: 1px solid azure;
+}
+
+.slideshowContainer img:first-child {
+  border: 2px solid black;
 }
 
 .slideshowContainer img:hover {
