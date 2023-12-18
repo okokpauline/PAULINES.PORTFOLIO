@@ -17,6 +17,23 @@ li, a, button {
   color: #131212;
 }
 
+.title h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #232946;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.title h1::after {
+  content: "";
+  height: 4px;
+  width: 230px;
+  display: block;
+  margin: auto;
+  background-color: #9b9dd0;
+}
+
 h1 {
   color: #131212;
   margin: 20px 0px 20px;
@@ -199,8 +216,12 @@ body {
 
 .about {
   width: 100%;
-  padding: 100px 0px;
   background-color: #e7e7e716;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .about img {
@@ -213,8 +234,6 @@ body {
 }
 
 .main {
-  width: 1130px;
-  height: 90vh;
   max-width: 95%;
   margin: 0 auto;
   display: flex;
@@ -265,6 +284,7 @@ footer {
   background: #9b9dd0;
   min-height: 100px;
   padding: 20px 50px;
+  margin-top: 100px;
 }
 
 footer .socialIcon {
