@@ -14,7 +14,7 @@ const changeSlide = (event, slideshow) => {
   const slideName = slideToSwitchTo.className.split(' ')[1];
   slideToSwitchTo.style.border = '2px solid black';
   hero.style.transition = '1s ease-in-out';
-  hero.style.backgroundImage = `url('/images/slideshow/${slideName}.svg')`;
+  hero.style.backgroundImage = `url('./images/slideshow/${slideName}.svg')`;
 };
 
 document.addEventListener('DOMContentLoaded', () => {
