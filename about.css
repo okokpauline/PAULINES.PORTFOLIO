@@ -130,8 +130,10 @@ h1.logo::before {
 }
 
 .navbar li {
-  display: inline-block;
-  padding: 0px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 50px;
 }
 
 .navbar li a {
