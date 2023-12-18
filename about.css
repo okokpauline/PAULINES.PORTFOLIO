@@ -224,6 +224,7 @@ body {
 
 .about img {
   height: auto;
+  max-width: 100%;
 }
 
 .about-text {
