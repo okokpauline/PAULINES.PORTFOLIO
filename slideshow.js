@@ -3,7 +3,7 @@
 const resetBorders = () => {
   const slideshow = document.querySelectorAll('.slideshow');
   slideshow.forEach((slide) => {
-    slide.style.border = '1px solid azure';
+    slide.classList.remove('active');
   });
 };
 
@@ -12,7 +12,7 @@ const changeSlide = (event, slideshow) => {
   const hero = $('hero');
   const slideToSwitchTo = event.currentTarget;
   const slideName = slideToSwitchTo.className.split(' ')[1];
-  slideToSwitchTo.style.border = '2px solid black';
+  slideToSwitchTo.classList.toggle('active');
   hero.style.transition = '1s ease-in-out';
   hero.style.backgroundImage = `url('./images/slideshow/${slideName}.svg')`;
 };

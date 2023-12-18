@@ -208,17 +208,19 @@ button:active {
   flex-direction: column;
 }
 
-.slideshowContainer img {
+.slideshowContainer .slideshow {
   width: 100px;
   margin-bottom: 10px;
   border: 1px solid azure;
+  border-radius: 5px;
 }
 
-.slideshowContainer img:first-child {
+.slideshowContainer .slideshow.active {
   border: 2px solid black;
+  transform: scale(1.1, 1.1);
 }
 
-.slideshowContainer img:hover {
+.slideshowContainer .slideshow:hover {
   cursor: pointer;
   transform: scale(1.1, 1.1);
 }
@@ -468,9 +470,10 @@ footer .wave#wave4 {
     align-items: center;
     flex-wrap: wrap;
   }
-  .slideshowContainer img {
+  .slideshowContainer .slideshow {
     margin: 5px;
     flex: 0 0 calc(50% - 20px);
+    transform: none !important;
   }
   .main {
     flex-direction: column;
