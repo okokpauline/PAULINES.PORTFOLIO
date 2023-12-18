@@ -17,6 +17,11 @@ button {
   color: #131212;
 }
 
+.hero {
+  width: 100%;
+  background-color:#e7e7e716;
+}
+
 h1 {
   color: #232946;
   margin: 20px 0px 20px;
@@ -214,7 +219,7 @@ body {
   background-color: #9b9dd0;
 }
 
-.servicesContainer {
+.serviceContainer {
   width: 85%;
   height: 100vh;
   display: flex;
@@ -224,7 +229,7 @@ body {
   text-align: center;
 }
 
-.services {
+.service {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -263,7 +268,7 @@ body {
   color: #232946;
 }
 
-.services .card:hover {
+.service .card:hover {
   transform: scale(1.1, 1.1);
 }
 
@@ -417,12 +422,8 @@ footer .wave#wave4 {
   #mobileHeader {
     display: flex;
   }
-  .servicesContainer {
-    width: 100%;
-    height: inherit;
-    margin: 0;
-  }
-  .services {
+
+  .service {
     flex-direction: column;
     margin: 10px;
   }
@@ -430,6 +431,6 @@ footer .wave#wave4 {
     margin: 0px 0px 30px 0px;
   }
   footer {
-    margin-top: 100px;
+    margin-top: 500px;
   }
 }

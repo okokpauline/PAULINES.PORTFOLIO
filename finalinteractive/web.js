@@ -1,20 +1,5 @@
 'use strict';
 
-// Contact list focus
-const inputs = document.querySelectorAll('.input');
-
-function focusFunc() {
-  let parent = this.parentNode;
-  parent.classList.add('focus');
-}
-
-function blurFunc() {
-  let parent = this.parentNode;
-  if (this.value == '') {
-    parent.classList.remove('focus');
-  }
-}
-
 // Contact form submission
 const handleSubmit = (event) => {
   console.log('handling submit...');

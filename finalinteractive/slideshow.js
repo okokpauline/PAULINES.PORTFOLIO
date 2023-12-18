@@ -9,10 +9,12 @@ const resetBorders = () => {
 
 const changeSlide = (event, slideshow) => {
   resetBorders();
+  const hero = $('hero');
   const slideToSwitchTo = event.currentTarget;
   const slideName = slideToSwitchTo.className.split(' ')[1];
   slideToSwitchTo.style.border = '2px solid black';
-  $('hero').style.backgroundImage = `url('/images/slideshow/${slideName}.svg')`;
+  hero.style.transition = '1s ease-in-out';
+  hero.style.backgroundImage = `url('/images/slideshow/${slideName}.svg')`;
 };
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -12,7 +12,7 @@
 li, a, button {
   font-weight: 500;
   font-size: 16px;
-  color: #131212;
+  color: #232946;
 }
 
 h1 {
@@ -63,7 +63,7 @@ h4 {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #232946;
   display: block;
   transition: 0.3s;
 }
@@ -194,7 +194,7 @@ button:active {
 .hero {
   height: 90vh;
   width: 100%;
-  background-color:azure;
+  background-color:#e7e7e716;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -267,7 +267,7 @@ body {
 .about {
   width: 100%;
   padding: 100px 0px;
-  background-color: #e7e7e7;
+  background-color: #e7e7e716;
 }
 
 .about img {
@@ -289,7 +289,7 @@ body {
 }
 
 .about-text h2 {
-  color: #131212;
+  color: #232946;
   font-size: 50px;
   text-transform: capitalize;
   margin-bottom: 20px;
@@ -313,7 +313,7 @@ body {
 }
 
 .about-text p {
-  color: #131212;
+  color: #232946;
   letter-spacing: 1px;
   line-height: 28px;
   font-size: 18px;
@@ -464,9 +464,13 @@ footer .wave#wave4 {
   .slideshowContainer {
     margin-top: 30px;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   .slideshowContainer img {
     margin: 5px;
+    flex: 0 0 calc(50% - 20px);
   }
   .main {
     flex-direction: column;
