@@ -29,7 +29,7 @@ h3 {
 
 h4 {
   color: #232946;
-  letter-spacing: 2px;
+  letter-spacing: normal;
   font-size: 20px;
 }
 
@@ -462,9 +462,6 @@ footer .wave#wave4 {
     height: 100vh;
     flex-direction: column;
     justify-content: center;
-  }
-  .hi {
-    letter-spacing: normal;
   }
   .slideshowContainer {
     margin-top: 30px;
